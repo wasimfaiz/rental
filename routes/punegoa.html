@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pune to Goa Cab | VeloTaxi</title>
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
+body{background:#f6f7fb;color:#222}
+
+/* Header */
+.header{
+  background:#fff;
+  padding:16px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 15px rgba(0,0,0,.06)
+}
+.logo{font-size:22px;font-weight:700}
+.back-btn{
+  background:#ffb400;
+  padding:10px 18px;
+  border-radius:8px;
+  font-weight:700;
+  text-decoration:none;
+  color:#000
+}
+
+/* Hero */
+.route-hero{
+  padding:70px 20px;
+  color:#fff;
+  text-align:center;
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+    center/cover no-repeat
+}
+.route-hero h1{font-size:42px;margin-bottom:10px}
+.route-hero p{max-width:760px;margin:auto;font-size:17px}
+
+/* Container */
+.container{
+  max-width:1100px;
+  margin:50px auto;
+  padding:0 20px
+}
+
+.route-info{
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  margin-bottom:50px;
+  line-height:1.7
+}
+
+/* Section Titles */
+.section-title{
+  text-align:center;
+  font-size:30px;
+  margin:60px 0 30px
+}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px
+}
+
+.card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+  transition:.3s
+}
+.card:hover{transform:translateY(-6px)}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover
+}
+
+.card-content{
+  padding:18px;
+  text-align:center
+}
+.card-content h3{
+  font-size:18px;
+  margin-bottom:8px
+}
+.card-content p{
+  font-size:14px;
+  color:#555
+}
+
+/* CTA */
+.cta{
+  margin:70px auto;
+  text-align:center;
+  background:#fff;
+  padding:40px 20px;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08)
+}
+.cta a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#ffb400;
+  padding:14px 26px;
+  border-radius:10px;
+  font-weight:700;
+  text-decoration:none;
+  color:#000
+}
+
+/* Footer */
+.footer{
+  background:#0b0b0b;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  margin-top:50px
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .route-hero h1{font-size:28px}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="logo">VeloTaxi</div>
+  <a href="routes.html" class="back-btn"><i class="ri-arrow-left-line"></i> Back</a>
+</header>
+
+<!-- Hero -->
+<section class="route-hero">
+  <h1>Pune to Goa Cab Service</h1>
+  <p>
+    Enjoy a comfortable and scenic road journey from Pune to Goa with
+    professional drivers, clean vehicles and flexible cab options.
+  </p>
+</section>
+
+<div class="container">
+
+  <!-- Route Info -->
+  <div class="route-info">
+    <p>
+      Pune to Goa is one of the most scenic long-distance road trips in India.
+      The distance is approximately <b>450 km</b> and the journey takes around
+      <b>9–11 hours</b> depending on the route and traffic.
+      <br><br>
+      Popular routes include Pune–Kolhapur–Amboli Ghat and Pune–Belgaum highway,
+      offering lush greenery, ghats and beautiful landscapes.
+      VeloTaxi ensures a safe, relaxed and enjoyable ride with experienced
+      outstation drivers.
+    </p>
+  </div>
+
+  <!-- Places to Visit -->
+  <h2 class="section-title">Best Places to Visit in Goa</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card-content">
+        <h3>Baga Beach</h3>
+        <p>Famous for nightlife, water sports and vibrant beach shacks.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1597820334272-af87b2d917c1?q=80&w=2156&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card-content">
+        <h3>Calangute Beach</h3>
+        <p>Known as the Queen of Beaches, perfect for relaxation.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1652120704209-14cbc87b603f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card-content">
+        <h3>Dudhsagar Waterfalls</h3>
+        <p>One of India’s tallest waterfalls surrounded by forests.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1646748019039-e908f7e41282?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card-content">
+        <h3>Anjuna Beach</h3>
+        <p>Popular for flea markets and sunset views.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1706940119676-957a79a61248?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card-content">
+        <h3>Basilica of Bom Jesus</h3>
+        <p>UNESCO World Heritage church in Old Goa.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605591514039-5f8cdda13287?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card-content">
+        <h3>Fort Aguada</h3>
+        <p>Historic fort with panoramic sea views.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Eat -->
+  <h2 class="section-title">Top Places to Eat in Goa</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+      <div class="card-content">
+        <h3>Britto’s</h3>
+        <p>Legendary beach shack famous for Goan seafood.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9">
+      <div class="card-content">
+        <h3>Gunpowder</h3>
+        <p>Authentic South Indian coastal cuisine.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1543353071-087092ec393a">
+      <div class="card-content">
+        <h3>Mum’s Kitchen</h3>
+        <p>Traditional Goan home-style dishes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h2>Book Pune to Goa Cab Now</h2>
+    <p>Long distance • Comfortable • Best price guaranteed</p><br>
+    <a href="https://wa.me/919876543210">
+      <i class="ri-whatsapp-line"></i> Book on WhatsApp
+    </a>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  © 2025 VeloTaxi. All rights reserved.
+</footer>
+
+</body>
+</html>

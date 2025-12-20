@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pune to Mumbai Cab | VeloTaxi</title>
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
+body{background:#f6f7fb;color:#222}
+
+/* Header */
+.header{
+  background:#fff;
+  padding:16px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 15px rgba(0,0,0,.06)
+}
+.logo{font-size:22px;font-weight:700}
+.back-btn{
+  background:#ffb400;
+  padding:10px 18px;
+  border-radius:8px;
+  font-weight:700;
+  text-decoration:none;
+  color:#000
+}
+
+/* Hero */
+
+.route-hero{padding:60px 20px; color: #fff; text-align:center;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)), url('https://images.unsplash.com/photo-1562979314-bee7453e911c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat}
+.route-hero h1{font-size:42px;margin-bottom:10px}
+.route-hero p{max-width:760px;margin:auto;font-size:17px}
+
+/* Content */
+.container{
+  max-width:1100px;
+  margin:50px auto;
+  padding:0 20px
+}
+
+.route-info{
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  margin-bottom:40px;
+  line-height:1.7
+}
+
+/* Places */
+.places-title{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:30px
+}
+
+.places-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px
+}
+
+.place-card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+  transition:.3s
+}
+.place-card:hover{transform:translateY(-6px)}
+
+.place-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover
+}
+
+.place-content{
+  padding:18px;
+  text-align:center
+}
+.place-content h3{
+  font-size:18px;
+  margin-bottom:8px
+}
+.place-content p{
+  font-size:14px;
+  color:#555
+}
+
+/* CTA */
+.cta{
+  margin:60px auto;
+  text-align:center;
+  background:#fff;
+  padding:40px 20px;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08)
+}
+.cta a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#ffb400;
+  padding:14px 26px;
+  border-radius:10px;
+  font-weight:700;
+  text-decoration:none;
+  color:#000
+}
+
+/* Footer */
+.footer{
+  background:#0b0b0b;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  margin-top:40px
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .places-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .route-hero h1{font-size:28px}
+  .places-grid{grid-template-columns:1fr}
+}
+
+/* Eat Places */
+.eat-title{
+  text-align:center;
+  font-size:30px;
+  margin:60px 0 30px;
+}
+
+.eat-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-bottom:40px;
+}
+
+.eat-card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+  transition:.3s;
+}
+
+.eat-card:hover{
+  transform:translateY(-6px);
+}
+
+.eat-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.eat-content{
+  padding:18px;
+  text-align:center;
+}
+
+.eat-content h3{
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.eat-content p{
+  font-size:14px;
+  color:#555;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .eat-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .eat-grid{grid-template-columns:1fr}
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="logo">VeloTaxi</div>
+  <a href="routes.html" class="back-btn"><i class="ri-arrow-left-line"></i> Back</a>
+</header>
+
+<!-- Hero -->
+<section class="route-hero">
+  <h1>Pune to Mumbai Cab Service</h1>
+  <p>Comfortable, safe and affordable cab service from Pune to Mumbai with experienced drivers and multiple vehicle options.</p>
+</section>
+
+<!-- Content -->
+<div class="container">
+
+  <div class="route-info">
+    <p>
+      Pune to Mumbai is one of the most frequently traveled routes in Maharashtra.
+      The distance is approximately <b>150 km</b> and the journey takes around <b>3–4 hours</b> via the Mumbai–Pune Expressway.
+      VeloTaxi ensures a smooth ride with well-maintained vehicles and professional drivers.
+    </p>
+  </div>
+
+  <h2 class="places-title">Best Places to Visit in Mumbai</h2>
+
+  <div class="places-grid">
+
+    <div class="place-card">
+      <img src="https://images.unsplash.com/photo-1667849521371-e78b4d603076?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="place-content">
+        <h3>Gateway of India</h3>
+        <p>Iconic monument overlooking the Arabian Sea and a must-visit landmark.</p>
+      </div>
+    </div>
+
+    <div class="place-card">
+      <img src="https://images.unsplash.com/photo-1682414593649-c3e4024a7995?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="place-content">
+        <h3>Marine Drive</h3>
+        <p>Beautiful sea-facing road also known as the Queen’s Necklace.</p>
+      </div>
+    </div>
+
+    <div class="place-card">
+      <img src="https://images.unsplash.com/photo-1669066872404-8a10fc6c991b?q=80&w=2154&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="place-content">
+        <h3>Elephanta Caves</h3>
+        <p>UNESCO heritage caves famous for ancient rock-cut sculptures.</p>
+      </div>
+    </div>
+
+    <div class="place-card">
+      <img src="https://images.unsplash.com/photo-1710144481132-b1702639d4e7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="place-content">
+        <h3>Juhu Beach</h3>
+        <p>Popular beach for sunsets, street food and evening walks.</p>
+      </div>
+    </div>
+
+    <div class="place-card">
+      <img src="https://images.unsplash.com/photo-1598089842456-ac3c6ef91f43?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="place-content">
+        <h3>Siddhivinayak Temple</h3>
+        <p>One of the most famous and revered temples in Mumbai.</p>
+      </div>
+    </div>
+
+    <div class="place-card">
+      <img src="https://images.unsplash.com/photo-1664990104456-bf938594b9f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="place-content">
+        <h3>Bandra–Worli Sea Link</h3>
+        <p>Architectural marvel connecting Bandra and Worli.</p>
+      </div>
+    </div>
+
+  </div>
+
+   
+
+  <h2 class="eat-title">Top Places to Eat in Mumbai</h2>
+
+<div class="eat-grid">
+
+  <div class="eat-card">
+    <img src="https://images.unsplash.com/photo-1543353071-087092ec393a">
+    <div class="eat-content">
+      <h3>Leopold Cafe</h3>
+      <p>Iconic cafe near Colaba known for multi-cuisine food and historic charm.</p>
+    </div>
+  </div>
+
+  <div class="eat-card">
+    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9">
+    <div class="eat-content">
+      <h3>Bademiya</h3>
+      <p>Famous late-night street food spot for kebabs and rolls.</p>
+    </div>
+  </div>
+
+  <div class="eat-card">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+    <div class="eat-content">
+      <h3>Britannia & Co.</h3>
+      <p>Legendary Irani cafe serving Parsi dishes like Berry Pulao.</p>
+    </div>
+  </div>
+
+  <div class="eat-card">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+    <div class="eat-content">
+      <h3>Juhu Beach Street Food</h3>
+      <p>Must-try pav bhaji, bhel puri and sev puri by the sea.</p>
+    </div>
+  </div>
+
+  <div class="eat-card">
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+    <div class="eat-content">
+      <h3>The Bombay Canteen</h3>
+      <p>Modern Indian restaurant celebrating regional Indian flavors.</p>
+    </div>
+  </div>
+
+  <div class="eat-card">
+    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <div class="eat-content">
+      <h3>Trishna</h3>
+      <p>Renowned seafood restaurant famous for butter garlic crab.</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+  <div class="cta">
+    <h2>Book Pune to Mumbai Cab Now</h2>
+    <p>Instant booking via WhatsApp with best pricing</p><br>
+    <a href="https://wa.me/919876543210">
+      <i class="ri-whatsapp-line"></i> Book on WhatsApp
+    </a>
+  </div>
+
+
+    
+
+  
+
+
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  © 2025 VeloTaxi. All rights reserved.
+</footer>
+
+</body>
+</html>
